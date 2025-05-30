@@ -24,3 +24,5 @@ Proyek ini menunjukkan kemampuan praktis dalam implementasi machine learning sec
 * Pandas
 * Scikit-Learn
 * Python
+![screencapture-127-0-0-1-5000-2025-05-30-17_39_41](https://github.com/user-attachments/assets/423a4e03-cfd1-40e0-97c2-81b88d4b7993)
+![screencapture-127-0-0-1-5000-result-2025-05-30-17_37_13](https://github.com/user-attachments/assets/f81bc97b-1682-4858-b7af-9b5fa377931f)
