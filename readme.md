@@ -18,4 +18,9 @@ Mengembangkan sistem prediksi berbasis web dengan menerapkan dan membandingkan t
 
 Proyek ini menunjukkan kemampuan praktis dalam implementasi machine learning secara menyeluruh, analisis metrik evaluasi, serta deployment model ke dalam aplikasi web.
 
-## Framework : Flask
+## Tools & Framework : 
+
+* Flask
+* Pandas
+* Scikit-Learn
+* Python
