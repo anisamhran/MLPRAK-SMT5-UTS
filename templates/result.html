@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Medical Diagnosis Result</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#"> <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo"> </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="btn_2 d-none d-lg-block" href="#">HOT LINE- 09856</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- breadcrumb start-->
+    <section class="breadcrumb_part breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="breadcrumb_iner_item">
+                            <h2>Diagnose </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb end-->
+
+    <!-- Hasil Diagnosis -->
+    <section class="contact-section section_padding">
+        <div class="container">
+            {% if error %}
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
+            {% else %}
+                <h2 class="contact-title">Diagnosis Summary</h2>
+                <table class="table table-bordered result-table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Field</th>
+                            <th>Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nama</td>
+                            <td>{{ user_name }}</td>
+                        </tr>
+                        <tr>
+                            <td>Usia</td>
+                            <td>{{ user_age }}</td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>{{ user_gender }}</td>
+                        </tr>
+                        <tr>
+                            <td>Gejala yang Dipilih</td>
+                            <td><pre>{{ selected_symptoms }}</pre></td>
+                        </tr>
+                        <tr>
+                            <td>Hasil Diagnosis</td>
+                            <td>{{ diagnosis_result }}</td>
+                        </tr>
+                        <tr>
+                            <td>Saran Perawatan</td>
+                            <td>{{ suggested_treatment }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Tombol Kembali ke Formulir -->
+                <div class="text-center back-button">
+                    <a href="/" class="btn btn-secondary">Kembali ke Formulir</a>
+                </div>
+            {% endif %}
+        </div>
+    </section>
+    <!-- End Hasil Diagnosis -->
+
+    <!-- footer part start-->
+    <footer class="footer-area">
+        <div class="footer section_padding">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-2 col-md-4 col-sm-6 single-footer-widget">
+                        <a href="#" class="footer_logo"> <img src="{{ url_for('static', filename='img/logo.png') }}" alt="#"> </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                        <div class="social_logo">
+                            <a href="#"><i class="ti-facebook"></i></a>
+                            <a href="#"> <i class="ti-twitter"></i> </a>
+                            <a href="#"><i class="ti-instagram"></i></a>
+                            <a href="#"><i class="ti-skype"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-6 col-md-4 single-footer-widget">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Department</a></li>
+                            <li><a href="#"> Online payment</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Department</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-sm-6 col-md-4 single-footer-widget">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#">In the community</a></li>
+                            <li><a href="#">IU health foundation</a></li>
+                            <li><a href="#">Family support </a></li>
+                            <li><a href="#">Business solution</a></li>
+                            <li><a href="#">Community clinic</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright_part">
+            <div class="container">
+                <div class="row align-items-center">
+                    <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                    <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+                        <a href="#"><i class="ti-facebook"></i></a>
+                        <a href="#"> <i class="ti-twitter"></i> </a>
+                        <a href="#"><i class="ti-instagram"></i></a>
+                        <a href="#"><i class="ti-skype"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+    <script src="{{ url_for('static', filename='js/jquery-1.12.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+
+</html>

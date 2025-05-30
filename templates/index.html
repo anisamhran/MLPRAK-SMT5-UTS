@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>medical</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css') }}">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css') }}">
+    <!-- magnific popup CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <!-- nice select CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <style>
+        /* Perbesar radio button */
+        input[type="radio"] {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px; /* Beri jarak antara radio button dan label */
+        }
+        
+        /* Sesuaikan gaya label */
+        .radio-group label {
+          font-size: 18px; /* Sesuaikan ukuran teks */
+          display: inline-block;
+          margin: 10px; /* Tambahkan margin untuk jarak antar label */
+        }
+        
+        /* Gaya tambahan untuk memperbaiki tampilan */
+        .radio-group {
+          display: flex;
+          align-items: center;
+        }
+        
+        .radio-group div {
+          margin-right: 20px; /* Jarak antar pilihan radio */
+        }
+        
+        /* Tambahkan padding di form untuk menyesuaikan tata letak */
+        .form-group {
+          padding: 10px 0; /* Jarak antar pertanyaan */
+        }
+        </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"> <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo"> </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">about</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Doctor.html">Doctors</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="services.html">services</a>
+                                        <a class="dropdown-item" href="dep.html">depertments</a>
+                                        <a class="dropdown-item" href="elements.html">Elements</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        blog
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
+                                        <a class="dropdown-item" href="blog.html">blog</a>
+                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="btn_2 d-none d-lg-block" href="#">HOT LINE- 09856</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-xl-5">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h5>We are here for your care</h5>
+                            <h1>Caring for Your Lungs, One Click at a Time</h1>
+                            <p>Prediksi dini kanker paru-paru bisa menyelamatkan nyawa. Dapatkan hasil Prediksi yang akurat dan informatif hanya dengan beberapa langkah sederhana.
+                            </p>
+                            <a href="#" class="btn_2">Prediksi Sekarang</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="banner_img">
+                        <img src="{{ url_for('static', filename='img/banner_img.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+    <!-- about us part start-->
+    <section class="about_us padding_top">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6 col-lg-6">
+                    <div class="about_us_img">
+                        <img src="{{ url_for('static', filename='img/top_service.png') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="about_us_text">
+                        <h2>About us</h2>
+                        <p>Selamat datang di Medico, sebuah platform yang didedikasikan untuk membantu Anda menjaga kesehatan paru-paru dengan memberikan layanan Prediksi dini kanker paru-paru yang akurat dan dapat diandalkan. Kami memahami pentingnya Prediksi dini dalam mencegah perkembangan penyakit yang lebih serius. Oleh karena itu, kami menghadirkan teknologi berbasis machine learning yang dirancang untuk membantu mengidentifikasi faktor risiko dan gejala kanker paru-paru hanya dengan beberapa langkah mudah.</p>
+                        <a class="btn_2 " href="#">learn more</a>
+                        <div class="banner_item">
+                            <div class="single_item">
+                                <img src="{{ url_for('static', filename='img/icon/banner_1.svg') }}" alt="">
+                                <h5>Prediksi Dini</h5>
+                            </div>
+                            <div class="single_item">
+                                <img src="{{ url_for('static', filename='img/icon/banner_2.svg') }}" alt="">
+                                <h5>Prediksi Resiko</h5>
+                            </div>
+                            <div class="single_item">
+                                <img src="{{ url_for('static', filename='img/icon/banner_3.svg') }}" alt="">
+                                <h5>Tindakan Lanjutan</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us part end-->
+
+    <!-- feature_part start-->
+    <section class="feature_part">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="section_tittle text-center">
+                        <h2>The Biggest Risk Factor</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-3 col-sm-12">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="{{ url_for('static', filename='img/icon/rokok.png') }}" alt=""></span>
+                            <h4>Merokok</h4>
+                            <p>Merokok merupakan penyebab utama kanker paru-paru. Racun dan zat kimia berbahaya dalam rokok dapat merusak jaringan paru-paru dan meningkatkan risiko kanker.</p>
+                        </div>
+                    </div>
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="{{ url_for('static', filename='img/icon/gene.png') }}" alt=""></span>
+                            <h4>Riwayat Keluarga</h4>
+                            <p>Riwayat keluarga dengan kanker paru-paru dapat meningkatkan risiko terjadinya penyakit ini. Penting untuk memantau gejala dan melakukan pemeriksaan rutin.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="single_feature_img text-center">
+                        <img src="{{ url_for('static', filename='img/paru.png') }}" alt="Paru-paru">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="{{ url_for('static', filename='img/icon/smoke.png') }}" alt=""></span>
+                            <h4>Polusi Udara</h4>
+                            <p>Polusi udara, terutama yang berasal dari asap kendaraan dan pabrik, dapat menyebabkan kerusakan paru-paru dalam jangka panjang dan meningkatkan risiko kanker paru.</p>
+                        </div>
+                    </div>
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="{{ url_for('static', filename='img/icon/drink.png') }}" alt=""></span>
+                            <h4>Konsumsi Alkohol</h4>
+                            <p>Konsumsi alkohol yang berlebihan dapat melemahkan sistem kekebalan tubuh, sehingga tubuh lebih rentan terhadap perkembangan sel kanker, termasuk kanker paru-paru.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- feature_part start-->
+
+    <!-- our depertment part start-->
+    <section class="our_depertment section_padding">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-12">
+                    <div class="depertment_content">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-8">
+                                <h2>Lung Cancer Prediction</h2>
+                                <div class="row">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <form class="form-contact contact_form" action="/result" method="post">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label for="name">Nama</label>
+                                                                <input class="form-control" name="name" id="name" type="text" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label for="usia">Usia</label>
+                                                                <input class="form-control" name="usia" id="usia" type="number" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <!-- Radio Button Questions -->
+                                                    <div class="form-group">
+                                                        <label>Jenis kelamin:</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="male" name="gender" value="male" required>
+                                                            <label for="male">Laki-laki</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="female" name="gender" value="female" required>
+                                                            <label for="female">Perempuan</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Apakah Anda seorang perokok?</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="smoking_yes" name="smoking" value="yes" required>
+                                                            <label for="smoking_yes">Ya</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="smoking_no" name="smoking" value="no" required>
+                                                            <label for="smoking_no">Tidak</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Apakah jari-jari Anda berwarna kekuningan?</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="yellow_fingers_yes" name="yellow_fingers" value="yes" required>
+                                                            <label for="yellow_fingers_yes">Ya</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="yellow_fingers_no" name="yellow_fingers" value="no" required>
+                                                            <label for="yellow_fingers_no">Tidak</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Apakah Anda sering mengalami kecemasan?</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="anxiety_yes" name="anxiety" value="yes" required>
+                                                            <label for="anxiety_yes">Ya</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="anxiety_no" name="anxiety" value="no" required>
+                                                            <label for="anxiety_no">Tidak</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Apakah Anda pernah merasakan tekanan dari lingkungan sekitar untuk merokok atau melakukan kebiasaan yang tidak sehat?</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="peer_pressure_yes" name="peer_pressure" value="yes" required>
+                                                            <label for="peer_pressure_yes">Ya</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="peer_pressure_no" name="peer_pressure" value="no" required>
+                                                            <label for="peer_pressure_no">Tidak</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Apakah Anda memiliki riwayat penyakit kronis?</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="chronic_disease_yes" name="chronic_disease" value="yes" required>
+                                                            <label for="chronic_disease_yes">Ya</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="chronic_disease_no" name="chronic_disease" value="no" required>
+                                                            <label for="chronic_disease_no">Tidak</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Apakah Anda sering merasa lelah atau kelelahan?</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="fatigue_yes" name="fatigue" value="yes" required>
+                                                            <label for="fatigue_yes">Ya</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="fatigue_no" name="fatigue" value="no" required>
+                                                            <label for="fatigue_no">Tidak</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Apakah Anda memiliki alergi tertentu?</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="allergy_yes" name="allergy" value="yes" required>
+                                                            <label for="allergy_yes">Ya</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="allergy_no" name="allergy" value="no" required>
+                                                            <label for="allergy_no">Tidak</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Apakah Anda sering mengalami mengi (bunyi napas yang menciut)?</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="wheezing_yes" name="wheezing" value="yes" required>
+                                                            <label for="wheezing_yes">Ya</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="wheezing_no" name="wheezing" value="no" required>
+                                                            <label for="wheezing_no">Tidak</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Apakah Anda sering mengonsumsi alkohol?</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="alcohol_consuming_yes" name="alcohol_consuming" value="yes" required>
+                                                            <label for="alcohol_consuming_yes">Ya</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="alcohol_consuming_no" name="alcohol_consuming" value="no" required>
+                                                            <label for="alcohol_consuming_no">Tidak</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Apakah Anda sering batuk?</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="coughing_yes" name="coughing" value="yes" required>
+                                                            <label for="coughing_yes">Ya</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="coughing_no" name="coughing" value="no" required>
+                                                            <label for="coughing_no">Tidak</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Apakah Anda sering mengalami sesak napas?</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="shortness_of_breath_yes" name="shortness_of_breath" value="yes" required>
+                                                            <label for="shortness_of_breath_yes">Ya</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="shortness_of_breath_no" name="shortness_of_breath" value="no" required>
+                                                            <label for="shortness_of_breath_no">Tidak</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Apakah Anda mengalami kesulitan saat menelan?</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="swallowing_difficulty_yes" name="swallowing_difficulty" value="yes" required>
+                                                            <label for="swallowing_difficulty_yes">Ya</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="swallowing_difficulty_no" name="swallowing_difficulty" value="no" required>
+                                                            <label for="swallowing_difficulty_no">Tidak</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div class="form-group">
+                                                        <label>Apakah Anda mengalami nyeri di dada?</label>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="chest_pain_yes" name="chest_pain" value="yes" required>
+                                                            <label for="chest_pain_yes">Ya</label>
+                                                        </div>
+                                                        <div class="radio-group">
+                                                            <input type="radio" id="chest_pain_no" name="chest_pain" value="no" required>
+                                                            <label for="chest_pain_no">Tidak</label>
+                                                        </div>
+                                                    </div>
+    
+                                                    <!-- Button -->
+                                                    <div class="form-group mt-3">
+                                                        <button type="submit" class="button button-contactForm btn_2">Predict</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <!-- our depertment part end-->
+
+  
+
+     <!--::blog_part start::-->
+    <section class="blog_part section_padding"> 
+        <div class="container">
+            <!-- Bagian Judul -->
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="section_tittle text-center">
+                        <!-- Ubah Judul -->
+                        <h2 class="custom_blog_title">Latest Articles on Lung Health</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Bagian Blog Konten -->
+            <div class="row">
+                <!-- Blog Pertama -->
+                <div class="col-sm-6">
+                    <div class="single-home-blog">
+                        <div class="card">
+                            <img src="{{ url_for('static', filename='img/blog/lung-cancer-risk-factors.png') }}" class="card-img-top" alt="blog">
+                            <div class="card-body">
+                                <a href="blog.html">
+                                    <!-- Ubah Judul Blog -->
+                                    <h5 class="card-title">Understanding Lung Cancer: Symptoms and Risk Factors</h5>
+                                </a>
+                                <!-- Ubah Detail Blog -->
+                                <ul class="blog-details">
+                                    <li><span class="ti-user"></span>By Dr. Jane Doe</li>
+                                    <li><span class="ti-bookmark"></span>Health, Cancer Awareness</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Kedua -->
+                <div class="col-sm-6">
+                    <div class="single-home-blog">
+                        <div class="card">
+                            <img src="{{ url_for('static', filename='img/blog/art2.png') }}" class="card-img-top" alt="blog">
+                            <div class="card-body">
+                                <a href="blog.html">
+                                    <h5 class="card-title">Prevention and Treatment of Lung Cancer: What You Need to Know</h5>
+                                </a>
+                                <ul class="blog-details">
+                                    <li><span class="ti-user"></span>By Dr. John Smith</li>
+                                    <li><span class="ti-bookmark"></span>Oncology, Prevention</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::blog_part end::-->
+
+    <!-- footer part start-->
+    <footer class="footer-area">
+        <div class="footer section_padding">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-2 col-md-4 col-sm-6 single-footer-widget">
+                        <a href="#" class="footer_logo"> <img src="{{ url_for('static', filename='img/logo.png') }}" alt="#"> </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                        <div class="social_logo">
+                            <a href="#"><i class="ti-facebook"></i></a>
+                            <a href="#"> <i class="ti-twitter"></i> </a>
+                            <a href="#"><i class="ti-instagram"></i></a>
+                            <a href="#"><i class="ti-skype"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-6 col-md-4 single-footer-widget">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Department</a></li>
+                            <li><a href="#"> Online payment</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Department</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-sm-6 col-md-4 single-footer-widget">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#">In the community</a></li>
+                            <li><a href="#">IU health foundation</a></li>
+                            <li><a href="#">Family support </a></li>
+                            <li><a href="#">Business solution</a></li>
+                            <li><a href="#">Community clinic</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-sm-6 col-md-6 single-footer-widget">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Lights were season</a></li>
+                            <li><a href="#"> Their is let wherein</a></li>
+                            <li><a href="#">which given over</a></li>
+                            <li><a href="#">Without given She</a></li>
+                            <li><a href="#">Isn two signs think</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 col-md-6 single-footer-widget">
+                        <h4>Newsletter</h4>
+                        <p>Seed good winged wherein which night multiply
+                            midst does not fruitful</p>
+                        <div class="form-wrap" id="mc_embed_signup">
+                            <form target="_blank"
+                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                method="get" class="form-inline">
+                                <input class="form-control" name="usia" placeholder="Your usia Address"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your usia Address '"
+                                    required="" type="usia">
+                                <button class="click-btn btn btn-default text-uppercase"> <i class="ti-angle-right"></i>
+                                </button>
+                                <div style="position: absolute; left: -5000px;">
+                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
+                                        type="text">
+                                </div>
+
+                                <div class="info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright_part">
+            <div class="container">
+                <div class="row align-items-center">
+                    <p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                    <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+                        <a href="#"><i class="ti-facebook"></i></a>
+                        <a href="#"> <i class="ti-twitter"></i> </a>
+                        <a href="#"><i class="ti-instagram"></i></a>
+                        <a href="#"><i class="ti-skype"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="{{ url_for('static', filename='js/jquery-1.12.1.min.js') }}"></script>
+    <!-- popper js -->
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <!-- bootstrap js -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <!-- owl carousel js -->
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+    <!-- contact js -->
+    <script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.form.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.validate.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/mail-script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+    <!-- custom js -->
+    <script src="{{ url_for('static', filename='js/custom.js') }} "></script>
+</body>
+
+</html>
